@@ -45,5 +45,26 @@ namespace FizzBuzzKataTests
         {
             Assert.AreEqual(FizzBuzz.isDivisibleByThreeAndFive(9), false);
         }
+
+        [TestMethod]
+
+        public void ChecksWhenNumberIsDivisibleByADivisor()
+        {
+            Assert.AreEqual(FizzBuzz.isDivisibleBy(16,4), true);
+            Assert.AreEqual(FizzBuzz.isDivisibleBy(25, 5), true);
+            Assert.AreEqual(FizzBuzz.isDivisibleBy(9, 3), true);
+        }
+
+        [TestMethod]
+
+        public void ChecksWhenNumberIsNotDivisibleByADivisor()
+        {
+            Assert.AreEqual(FizzBuzz.isDivisibleBy(16, 3), false);
+            Assert.AreEqual(FizzBuzz.isDivisibleBy(25, 6), false);
+            Assert.AreEqual(FizzBuzz.isDivisibleBy(9, 2), false);
+        }
+
+
+
     }
 }
