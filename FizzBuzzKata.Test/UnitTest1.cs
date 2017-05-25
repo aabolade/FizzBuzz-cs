@@ -32,5 +32,18 @@ namespace FizzBuzzKataTests
         {
             Assert.AreEqual(FizzBuzz.isDivisibleByFive(4), false);
         }
+
+        [TestMethod]
+        public void ChecksWhenNumberIsDivisibleByThreeAndFive()
+        {
+            Assert.AreEqual(FizzBuzz.isDivisibleByThreeAndFive(15), true);
+        }
+
+        [TestMethod]
+
+        public void ChecksWhenNumberIsNotDivisibleByThreeAndFive()
+        {
+            Assert.AreEqual(FizzBuzz.isDivisibleByThreeAndFive(9), false);
+        }
     }
 }

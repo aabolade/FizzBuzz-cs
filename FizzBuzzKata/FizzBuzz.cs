@@ -17,5 +17,10 @@ namespace FizzBuzzKata
         {
             return (number % 5 == 0);
         }
+
+        public static bool isDivisibleByThreeAndFive(int number)
+        {
+            return (number % 15 == 0);
+        }
     }
 }
