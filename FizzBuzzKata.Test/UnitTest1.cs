@@ -64,7 +64,33 @@ namespace FizzBuzzKataTests
             Assert.AreEqual(FizzBuzz.isDivisibleBy(9, 2), false);
         }
 
+        [TestMethod]
 
+        public void ReturnsFizzWhenNumberIsDivisibleByThree()
+        {
+            Assert.AreEqual(FizzBuzz.play(3), "Fizz");
+        }
+
+        [TestMethod]
+
+        public void ReturnsBuzzWhenNumberIsDivisibleByThree()
+        {
+            Assert.AreEqual(FizzBuzz.play(5), "Buzz");
+        }
+
+        [TestMethod]
+
+        public void ReturnsFizzBuzzWhenNumberIsDivisibleByThreeAndFive()
+        {
+            Assert.AreEqual(FizzBuzz.play(15), "Fizzbuzz");
+        }
+
+        [TestMethod]
+
+        public void ReturnsNumberWhenNotDivisibleByThreeFiveOrBothThreeAndFive()
+        {
+            Assert.AreEqual(FizzBuzz.play(7), "7");
+        }
 
     }
 }
